@@ -1,0 +1,358 @@
+:root {
+    --white: #FFF;
+    --iris: #4D5AE5;
+    --cloud: #F4F4FD;
+    --slate: #434455;
+    --ocean: #404BBF;
+    --navyblue: #2E2F42;
+    --cornflower: #E7E9FC;
+}
+
+body {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    font-family: "Roboto", sans-serif;
+
+    color: var(--white);
+    background-color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+
+.list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;   
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    display: flex;
+    padding: 90px 0px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0px 156px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header,
+footer,
+.hero,
+.task {
+    display: flex;
+    padding: 0px 156px;
+}
+
+.page-header {
+    height: 72px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--cornflower);
+}
+
+/* NAVIGATION CSS */
+nav,
+.contacts-menu {
+    gap: 76px;
+    align-items: center;
+    display: inline-flex;
+}
+
+.contacts-menu {
+    gap: 40px;
+    padding: 0px;
+    justify-content: right;
+}
+
+.nav-menu {
+    gap: 40px;
+    padding-left: 0px;
+    display: inline-flex;
+}
+
+
+/* I combined  the .page / .item since 
+same property and the font property inherit form global body decleration*/
+.nav-menu .page,
+.contacts-menu .item {
+    font-weight: 500;
+    line-height: 1.14;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+}
+
+.nav-menu .page:hover,
+.nav-menu .page:focus,
+.nav-menu .current,
+.contacts-menu .item:hover,
+.contacts-menu .item:focus {
+    color: var(--ocean);
+}
+
+/* LOGO CSS */
+.logo-link>span {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.2;
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+}
+
+.logo {
+    color: var(--iris);
+}
+
+.studio,
+.nav-menu .page {
+    color: var(--navyblue);
+}
+
+
+.hero {
+    height: 500px;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Header 1 */
+.hero-title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+
+.button {
+    font-family: inherit;
+    border-color: transparent;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+}
+
+.button.primary {
+    background-color: var(--iris);
+    color: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    padding: 16px 32px;
+}
+
+.button.primary:hover,
+.button.primary:focus {
+    border-radius: 4px;
+    background: var(--ocean);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.button.filter {
+    color: var(--navyblue);
+    background-color: var(--cloud);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    padding: 6px 22px;
+}
+
+.button.filter.current,
+.button.filter:hover,
+.button.filter:focus {
+    color: var(--white);
+    background-color: var(--ocean);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1) 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/*    SECTION-1 */
+.section-title {
+    /* Header 2 */
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--navyblue);
+}
+
+.benefits {
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #FFFFFF;
+}
+
+.benefits li {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    width: 264px;
+}
+
+.benefits .title,
+.team .name,
+.projects .name {
+    color: var(--navyblue);
+    font-weight: 700;
+    line-height: 1.14;
+    margin: 32px 0px 8px 0px;
+}
+
+.benefits .title {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.benefits .description {
+    line-height: 1.71;
+}
+
+
+/* |SECTION-2  */
+.what-we-do {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.what-we-do li {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+}
+
+.contacts-menu .item,
+.benefits .description,
+.team .position {
+    color: var(--slate);
+}
+
+/* | SECTION-3 CSS */
+.bg-team {
+    background-color: var(--cloud);
+}
+
+.team .name,
+.team .position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team.name {
+    font-weight: 500;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.team li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-top: 72px;
+    padding-bottom: 32px;
+    background-color: var(--white);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12) 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/*-------------------------------------------------------------------*/
+/*                     PORTFOLIO CSS                                 */
+/*-------------------------------------------------------------------*/
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 96px 0px 50px 0px;
+}
+
+.project {
+    text-decoration: none;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 120px;
+    /* cursor: pointer; */
+}
+
+.projects .name {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.projects li {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.projects .type {
+    color: #757575;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+}
+
+.project-description {
+    background-color: var(--white);
+    padding: 20px 24px;
+    border-top: 0;
+    border: 1px solid var(--cornflower);
+}
+
+/*-------------------------------------------------------------------*/
+/*                         FOOTER CSS                                */
+/*-------------------------------------------------------------------*/
+.bg-footer,
+.bg-hero {
+    background: var(--navyblue);
+}
+
+footer {
+    height: 312px;
+    align-items: center;
+    flex-direction: row;
+    background: var(--navyblue, #2E2F42);
+}
+
+.footer-container {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-description,
+.studio-2 {
+    color: var(--cloud);
+}
