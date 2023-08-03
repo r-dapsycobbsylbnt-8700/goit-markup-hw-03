@@ -320,7 +320,7 @@ same property and the font property inherit form global body decleration*/
     line-height: 1.87;
 }
 
-.project-description {
+.substrate {
     background-color: var(--white);
     padding: 20px 24px;
     border-top: 0;
