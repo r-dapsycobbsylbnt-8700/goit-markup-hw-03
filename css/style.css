@@ -8,6 +8,7 @@
     --cornflower: #E7E9FC;
 }
 
+
 body {
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -16,6 +17,7 @@ body {
     color: var(--white);
     background-color: var(--white);
 }
+
 
 h1,
 h2,
@@ -27,18 +29,6 @@ p {
     margin: 0;
 }
 
-
-.list {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;   
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
 
 .section {
     display: flex;
@@ -68,30 +58,32 @@ footer,
 }
 
 /* NAVIGATION CSS */
-nav,
+.menu,
+.navigation,
+.nav-menu,
 .contacts-menu {
-    gap: 76px;
+    display: flex;
     align-items: center;
-    display: inline-flex;
-}
-
-.contacts-menu {
-    gap: 40px;
-    padding: 0px;
-    justify-content: right;
 }
 
 .nav-menu {
-    gap: 40px;
-    padding-left: 0px;
-    display: inline-flex;
+    margin-left: 50px;
+}
+
+.nav-menu .item:not(:last-child),
+.contacts-menu .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contacts-menu {
+    margin-left: auto;
 }
 
 
 /* I combined  the .page / .item since 
 same property and the font property inherit form global body decleration*/
 .nav-menu .page,
-.contacts-menu .item {
+.contacts-menu .contact {
     font-weight: 500;
     line-height: 1.14;
     text-decoration: none;
@@ -101,8 +93,8 @@ same property and the font property inherit form global body decleration*/
 .nav-menu .page:hover,
 .nav-menu .page:focus,
 .nav-menu .current,
-.contacts-menu .item:hover,
-.contacts-menu .item:focus {
+.contacts-menu .contact:hover,
+.contacts-menu .contact:focus {
     color: var(--ocean);
 }
 
@@ -119,11 +111,15 @@ same property and the font property inherit form global body decleration*/
     color: var(--iris);
 }
 
+.list {
+    list-style: none;
+    padding: 0px;
+}
+
 .studio,
 .nav-menu .page {
     color: var(--navyblue);
 }
-
 
 .hero {
     height: 500px;
@@ -142,7 +138,6 @@ same property and the font property inherit form global body decleration*/
     letter-spacing: 0.06em;
     text-align: center;
 }
-
 
 .button {
     font-family: inherit;
@@ -196,6 +191,7 @@ same property and the font property inherit form global body decleration*/
     color: var(--navyblue);
 }
 
+
 .benefits {
     display: flex;
     height: 300px;
@@ -242,7 +238,7 @@ same property and the font property inherit form global body decleration*/
     margin-left: 30px;
 }
 
-.contacts-menu .item,
+.contacts-menu .contact,
 .benefits .description,
 .team .position {
     color: var(--slate);
