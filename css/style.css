@@ -310,6 +310,7 @@ same property and the font property inherit form global body decleration*/
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    color: var(--navyblue);
 }
 
 
