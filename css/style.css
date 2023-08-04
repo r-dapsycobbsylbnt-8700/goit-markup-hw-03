@@ -8,9 +8,9 @@
     --cornflower: #E7E9FC;
 }
 
-
+/* Checked */
 body {
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 0.03em;
     font-family: "Roboto", sans-serif;
 
@@ -18,7 +18,7 @@ body {
     background-color: var(--white);
 }
 
-
+/* Checked */
 h1,
 h2,
 h3,
@@ -29,35 +29,74 @@ p {
     margin: 0;
 }
 
-
-.section {
-    display: flex;
-    padding: 90px 0px;
+/* Checked */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
 }
 
+/* Checked */
+html {
+    box-sizing: border-box;
+}
+
+/* Checked */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Checked */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Checked */
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Checked */
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Checked */
+.section {
+    padding: 120px 0px;
+    /* shorthand */
+}
+
+/* Checked */
+.section.no-top-padding {
+    padding-top: 0;
+}
+
+/* Checked */
 .container {
     width: 1200px;
-    margin: 0px 156px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    padding: 0px 15px;
 }
 
-header,
-footer,
-.hero,
-.task {
-    display: flex;
-    padding: 0px 156px;
-}
-
+/* Checked */
 .page-header {
-    height: 72px;
-    box-sizing: border-box;
-    justify-content: space-between;
     border-bottom: 1px solid var(--cornflower);
 }
 
 /* NAVIGATION CSS */
+/* Checked */
 .menu,
 .navigation,
 .nav-menu,
@@ -66,15 +105,18 @@ footer,
     align-items: center;
 }
 
+/* Checked */
 .nav-menu {
-    margin-left: 50px;
+    margin-left: 93px;
 }
 
+/* Checked */
 .nav-menu .item:not(:last-child),
 .contacts-menu .item:not(:last-child) {
     margin-right: 50px;
 }
 
+/* Checked */
 .contacts-menu {
     margin-left: auto;
 }
@@ -82,79 +124,90 @@ footer,
 
 /* I combined  the .page / .item since 
 same property and the font property inherit form global body decleration*/
+/* Checked */
 .nav-menu .page,
 .contacts-menu .contact {
     font-weight: 500;
     line-height: 1.14;
     text-decoration: none;
     letter-spacing: 0.02em;
+    font-size: 16px;
+    color: var(--navyblue);
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 31px;
 }
 
+/* Checked */
 .nav-menu .page:hover,
 .nav-menu .page:focus,
 .nav-menu .current,
 .contacts-menu .contact:hover,
 .contacts-menu .contact:focus {
-    color: var(--ocean);
+    color: var(--iris);
 }
 
 /* LOGO CSS */
+/* Checked */
+.logo-link {
+    text-decoration: none;
+    font-size: 0;
+}
+
+/* Checked */
 .logo-link>span {
-    font-size: 26px;
+    font-size: 18px;
     font-weight: 800;
     line-height: 1.2;
     font-family: 'Raleway', sans-serif;
     display: inline-block;
 }
 
+/* Checked */
 .logo {
     color: var(--iris);
 }
 
-.list {
-    list-style: none;
-    padding: 0px;
-}
-
-.studio,
-.nav-menu .page {
+/* Checked */
+.studio {
     color: var(--navyblue);
 }
 
+/* Checked */
 .hero {
-    height: 500px;
-    align-items: center;
-    flex-direction: column;
-    gap: 50px;
-    justify-content: center;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 200px 0;
 }
 
 /* Header 1 */
+/* Checked */
 .hero-title {
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1.36;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
     letter-spacing: 0.06em;
-    text-align: center;
+    margin-bottom: 30px;
 }
 
+/* Checked */
 .button {
     font-family: inherit;
     border-color: transparent;
     cursor: pointer;
     letter-spacing: 0.03em;
     border-radius: 4px;
+    font-size: 16px;
 }
 
+/* Checked */
 .button.primary {
     background-color: var(--iris);
-    color: inherit;
-    font-weight: 700;
-    font-size: 16px;
+    color: var(--white);
+    font-weight: 500;
     line-height: 1.87;
     letter-spacing: 0.06em;
     padding: 16px 32px;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.15);
 }
 
 .button.primary:hover,
@@ -164,15 +217,17 @@ same property and the font property inherit form global body decleration*/
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+/* checked */
 .button.filter {
-    color: var(--navyblue);
+    color: var(--iris);
     background-color: var(--cloud);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    padding: 6px 22px;
+    padding: 12px 24px;
 }
 
+/* checked */
 .button.filter.current,
 .button.filter:hover,
 .button.filter:focus {
@@ -182,6 +237,7 @@ same property and the font property inherit form global body decleration*/
 }
 
 /*    SECTION-1 */
+/* Checked */
 .section-title {
     /* Header 2 */
     font-size: 36px;
@@ -189,59 +245,58 @@ same property and the font property inherit form global body decleration*/
     line-height: 1.17;
     text-align: center;
     color: var(--navyblue);
+    margin-bottom: 50px;
 }
 
-
+/* Checked */
 .benefits {
     display: flex;
-    height: 300px;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    background: #FFFFFF;
+    margin-top: -30px;
+    margin-left: -30px;
 }
 
-.benefits li {
+/* Checked */
+.benefits .item {
     flex-basis: calc(100% / 4 - 30px);
+    margin-top: 30px;
     margin-left: 30px;
-    width: 264px;
 }
 
-.benefits .title,
-.team .name,
-.projects .name {
-    color: var(--navyblue);
-    font-weight: 700;
-    line-height: 1.14;
-    margin: 32px 0px 8px 0px;
-}
-
+/* Checked */
 .benefits .title {
-    font-size: 14px;
+    color: var(--navyblue);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.14;
     margin-bottom: 10px;
 }
 
+
+
+/* Checked */
 .benefits .description {
     line-height: 1.71;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--slate);
 }
 
 
 /* |SECTION-2  */
+/* Checked */
 .what-we-do {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: -30px;
+    margin-left: -30px;
 }
 
-.what-we-do li {
+/* Checked */
+.what-we-do .item {
     flex-basis: calc(100% / 3 - 30px);
+    margin-top: 30px;
     margin-left: 30px;
-}
-
-.contacts-menu .contact,
-.benefits .description,
-.team .position {
-    color: var(--slate);
 }
 
 /* | SECTION-3 CSS */
@@ -249,6 +304,7 @@ same property and the font property inherit form global body decleration*/
     background-color: var(--cloud);
 }
 
+/* Checked */
 .team .name,
 .team .position {
     font-size: 16px;
@@ -256,70 +312,87 @@ same property and the font property inherit form global body decleration*/
     text-align: center;
 }
 
-.team.name {
+
+/* Checked */
+.team .name {
     font-weight: 500;
+    color: var(--navyblue);
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
+/* Checked */
 .team {
     display: flex;
     flex-wrap: wrap;
-    padding: 0px;
+    margin-top: -30px;
+    margin-left: -30px;
 }
 
-.team li {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+/* Checked */
+.team .item {
     flex-basis: calc(100% / 4 - 30px);
     margin-left: 30px;
-    margin-top: 72px;
-    padding-bottom: 32px;
+    margin-top: 30px;
+    padding-bottom: 30px;
     background-color: var(--white);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12) 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+        0px 2px 1px rgba(0, 0, 0, 0.12);
 }
 
 /*-------------------------------------------------------------------*/
 /*                     PORTFOLIO CSS                                 */
 /*-------------------------------------------------------------------*/
+/* Checked */
 .filters {
     display: flex;
     justify-content: center;
-    gap: 24px;
-    margin: 96px 0px 50px 0px;
+    margin-bottom: 50px;
 }
 
-.project {
-    text-decoration: none;
+/* Checked */
+.filters .space+.space {
+    margin-left: 8px;
+
 }
 
+/* Checked */
 .projects {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 120px;
+    margin-top: -30px;
+    margin-left: -30px;
     /* cursor: pointer; */
 }
 
+/* Checked */
+.project-card {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+/* Checked */
 .projects .name {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 2;
     letter-spacing: 0.06em;
+    color: var(--navyblue);
+    font-weight: 500;
+    margin-bottom: 4px;
 }
 
-.projects li {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
-}
-
+/* Checked */
 .projects .type {
-    color: #757575;
+    color: var(--slate);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
 }
 
+/* Checked */
 .substrate {
     background-color: var(--white);
     padding: 20px 24px;
@@ -330,25 +403,28 @@ same property and the font property inherit form global body decleration*/
 /*-------------------------------------------------------------------*/
 /*                         FOOTER CSS                                */
 /*-------------------------------------------------------------------*/
+.page-footer {
+    padding: 60px 0;
+}
+
+/* Checked */
 .bg-footer,
 .bg-hero {
     background: var(--navyblue);
 }
 
-footer {
-    height: 312px;
-    align-items: center;
-    flex-direction: row;
-    background: var(--navyblue, #2E2F42);
-}
 
-.footer-container {
-    gap: 16px;
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-description,
+/* Checked */
 .studio-2 {
     color: var(--cloud);
+}
+
+
+/* Checked */
+.footer-description {
+    color: var(--cloud);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-top: 17px;
 }
