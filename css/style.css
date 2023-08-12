@@ -6,6 +6,7 @@
     --ocean: #404BBF;
     --navyblue: #2E2F42;
     --cornflower: #E7E9FC;
+    --light-green: #31d0aa;
 }
 
 /* Checked */
@@ -177,6 +178,14 @@ same property and the font property inherit form global body decleration*/
 .hero {
     text-align: center;
     padding: 200px 0;
+}
+
+.bg-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.78),
+            rgba(46, 47, 66, 0.78)),
+        url(../images/hero-image-bg.jpg);
+
+    background-size: cover;
 }
 
 /* Header 1 */
@@ -409,8 +418,7 @@ same property and the font property inherit form global body decleration*/
 }
 
 /* Checked */
-.bg-footer,
-.bg-hero {
+.bg-footer {
     background: var(--navyblue);
 }
 
@@ -429,3 +437,174 @@ same property and the font property inherit form global body decleration*/
     line-height: 1.5;
     padding-top: 17px;
 }
+
+
+
+
+
+/*  */
+.team {
+    margin-left: -30px;
+    margin-top: -30px;
+    display: flex;
+}
+
+
+.social-team .icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.social-team {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 24px;
+}
+
+.social-team .link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--cloud);
+    background-color: var(--iris);
+}
+
+
+
+
+/* 
+.icon-item {
+    width: 40px;
+    height: 40px;
+} */
+.partners {
+    display: flex;
+    gap: 30px;
+}
+
+.partners .item {
+    width: calc((100% - 150px) / 6);
+    height: 90px;
+}
+
+.partners .link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    color: #8e8f99;
+    /* color: blue; */
+}
+
+.partners .link:hover,
+.partners .link:focus {
+    border-radius: 4px;
+    border: 1px solid var(--ocean);
+
+}
+
+
+.partners .icon {
+    fill: currentColor;
+}
+
+.partners .item svg:hover,
+.partners .item svg:focus {
+    color: var(--ocean);
+}
+
+.icon-item {
+    width: 40px;
+    height: 40px;
+}
+
+.bg-green .link:hover,
+.bg-green .link:focus {
+    background-color: var(--light-green);
+}
+
+.icon-item .link:hover,
+.icon-item .link:focus {
+    background-color: var(--ocean);
+}
+
+.item .cons:hover,
+.item .cons:focus {
+    background-color: var(--ocean);
+}
+
+.bg-green .link:hover,
+.bg-green .link:focus {
+    background-color: var(--light-green);
+}
+
+.benefits .icon {
+    display: flex;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    width: 264px;
+    height: 120px;
+    background-color: var(--cloud);
+    justify-content: center;
+    align-items: center;
+    padding: 24px 100px;
+}
+
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -12px;
+    margin-left: -50px;
+    align-items: baseline;
+    gap: 120px;
+}
+
+.footer .column {
+    margin-top: 12px;
+    margin-left: 25px;
+}
+
+.footer-heading {
+    color: inherit;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.32px;
+}
+
+.social-footer {
+    padding-top: 16px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.social-footer .link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--cloud);
+    background-color: var(--iris);
+}
+
+.social-footer .icon {
+    fill: currentColor;
+}
+
+
+
+.item .icon:hover,
+.item .icon:focus {}
